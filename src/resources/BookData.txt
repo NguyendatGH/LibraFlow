@@ -1,0 +1,10 @@
+B101,The Silent Patient,8,5,20.99
+B234,The Vanishing Half,10,2,15.75
+B345,Where the Crawdads Sing,6,3,17.50
+B456,The Midnight Library,4,1,18.50
+B567,Educated,5,2,12.99
+B678,Anxious People,3,1,22.50
+B789,The Invisible Man,7,4,14.25
+B890,Normal People,5,3,16.00
+B901,The Book Thief,9,2,21.00
+B012,The Road,2,0,11.99

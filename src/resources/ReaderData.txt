@@ -1,0 +1,10 @@
+R001,Mike Taylor,1992
+R002,Sarah Johnson,1988
+R003,David Williams,1980
+R004,Emily Davis,1999
+R005,Oliver Martinez,1995
+R006,Sophia Garcia,1975
+R007,Liam Rodriguez,2001
+R008,Isabella Hernandez,1994
+R009,James Wilson,1983
+R010,Amelia Lee,2000
