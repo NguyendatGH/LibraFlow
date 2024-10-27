@@ -1,0 +1,11 @@
+Book{bcode='B012', title='The Road', quantity=2, lended=0, price=11.99}
+Book{bcode='B101', title='The Silent Patient', quantity=8, lended=5, price=20.99}
+Book{bcode='B102', title='Atomic habit', quantity=3, lended=1, price=10.0}
+Book{bcode='B234', title='The Vanishing Half', quantity=10, lended=2, price=15.75}
+Book{bcode='B345', title='Where the Crawdads Sing', quantity=6, lended=3, price=17.5}
+Book{bcode='B456', title='The Midnight Library', quantity=4, lended=1, price=18.5}
+Book{bcode='B567', title='Educated', quantity=5, lended=2, price=12.99}
+Book{bcode='B678', title='Anxious People', quantity=3, lended=1, price=22.5}
+Book{bcode='B789', title='The Invisible Man', quantity=7, lended=4, price=14.25}
+Book{bcode='B890', title='Normal People', quantity=5, lended=3, price=16.0}
+Book{bcode='B901', title='The Book Thief', quantity=9, lended=2, price=21.0}

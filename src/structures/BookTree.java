@@ -160,28 +160,38 @@ public class BookTree {
         return searchRescursive(root.right, bcode);
     }
 
-    public void deleteBook(String bcode) {
-        root = deleteRecursive(root, bcode);
+    public boolean deleteBook(String bcode) {
+        if (isBcodeExists(bcode)) {
+            root = deleteRecursive(root, bcode);
+            return true;
+        }
+        return false;
     }
 
-    //    -------------------------------------------------------
+    // -------------------------------------------------------
     public BSTreeNode deleteRecursive(BSTreeNode root, String bcode) {
         if (root == null) return root;
+
         if (bcode.compareTo(root.bookData.getBcode()) < 0) {
             root.left = deleteRecursive(root.left, bcode);
         } else if (bcode.compareTo(root.bookData.getBcode()) > 0) {
             root.right = deleteRecursive(root.right, bcode);
         } else {
+            // Node found
             if (root.left == null) {
                 return root.right;
             } else if (root.right == null) {
                 return root.left;
             }
+
+            // Node with two children: Get the inorder successor (smallest in the right subtree)
             root.bookData = minValue(root.right);
-            root.right = deleteRecursive(root.right, bcode);
+            // Delete the inorder successor
+            root.right = deleteRecursive(root.right, root.bookData.getBcode());
         }
         return root;
     }
+
 
     //    -------------------------------------------------------
     public Book minValue(BSTreeNode root) {

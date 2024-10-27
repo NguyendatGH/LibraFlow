@@ -72,11 +72,11 @@ public class BookServices {
 
     private static void addBookFromKeyboard(BookTree bt) {
         String bcode = "";
-        while(true){
+        while (true) {
             bcode = Utils.getValue("Enter book code: ");
-            if(bt.isBcodeExists(bcode) == false){
+            if (!bt.isBcodeExists(bcode)) {
                 break;
-            }else{
+            } else {
                 System.out.println("Code is exits! try again");
             }
         }
@@ -116,10 +116,12 @@ public class BookServices {
     }
 
     private static void deleteByBcode(BookTree bt) {
-        System.out.print("Enter book code to delete: ");
-        String bcode = scanner.nextLine();
-        bt.deleteBook(bcode);
-        System.out.println("Book deleted successfully, if it existed.");
+        String bcode = Utils.getValue("Enter book code to delete: ");
+        if (bt.deleteBook(bcode)) {
+            System.out.println("Book deleted successfully");
+        } else {
+            System.out.println("not found book!");
+        }
     }
 
     private static void displayTree(ArrayList<Book> tmp, String displayText) {
