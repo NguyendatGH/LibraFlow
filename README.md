@@ -41,7 +41,7 @@
 
 ## 💡 **Contributing**
 
-Feel free to fork the repository and submit a pull request for any improvements or bug fixes! Contributions are always welcome! 😊
+Feel free to fork the repository and submit a pull request for any improvements or bug fixes! Contributions are always welcome! 
 
 ---
 
